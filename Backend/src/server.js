@@ -11,9 +11,11 @@ const connect = require("./configs/db");
 
 
 const flightController = require("./controllers/flight.controllers");
+const signupController=require("./controllers/signup.controllers")
 
 
 app.use("/flights", flightController);
+app.use("./signup", signupController);
 // app.set("views", path.join(__dirname, "views/"));
 
 

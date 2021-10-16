@@ -1,3 +1,119 @@
+
+
+.dropDownContainer{
+    width: 100%;
+    /* height: 420px; */
+    display: flex;
+    margin-bottom: 2px;
+    /* border:1px solid red; */
+}
+.booknow{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    background: white;
+    /* height: 300px; */
+}
+.refundable{
+    z-index: 1;
+}
+.assured{
+    box-shadow: 0px 0px 4px grey;
+    width: 40%;
+    /* border: 1px solid black; */
+    margin-right: 30px;
+    margin-left: 20px;
+    /* position: absolute; */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px dotted grey;
+}
+.header > div:first-child > p{
+    padding-left: 10px;
+}
+
+.assuredheader{
+    font-size: 10rem;
+}
+.assuredContent{
+    font-size:12px;
+    line-height:.9;
+    /* border: 1px solid green; */
+}
+.assuredItems{
+    display: flex;
+    margin: 0px;
+}
+.basic{
+    
+     width: 40%;
+    
+    /* border: 1px solid green; */
+    box-shadow: 0px 0px 4px grey;
+}
+.basicContent{
+     font-size:12px;
+    line-height:.9;
+}
+.btnbook{
+    border: .5px solid rgb(236,91,36);
+    color: rgb(236,91,36);
+    background: white;
+}
+
+.lists{
+    font-size: 15px;
+    background: white;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+
+.topNav{
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+    border-bottom: 1px dashed grey;
+    display: flex;
+    color:gray;
+    font-size: 12px;
+}
+.topNav>img, .topNav>p{
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.topNav>p:last-child{
+    color: green;
+    font-size: 12px;
+    margin-left:80px
+}
+
+.topList{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+     /* border: 1px solid grey; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*      rewrewrere */
 body{
      background-color: rgb(242,242,242);
 }
@@ -28,7 +144,6 @@ body{
     border: none;
     font-weight: bold;
     border-radius: 3px;
-    margin-top: 20px;
 }
 .searchbtn:hover{
     cursor: pointer;
@@ -87,7 +202,7 @@ height: 100%;
 .dateSlides{
     width:14.5%;
     height: 100%;
-    border-left: 1px dotted grey;
+    border: 1px dotted grey;
     line-height: 0cm;
 }
 .dateArrow{
@@ -244,7 +359,7 @@ border:none;
     background-color: white;
     height: 120px;
     width: 100%;
-    box-shadow: 0px 0px 2px grey;
+    /* box-shadow: 0px 0px 2px grey; */
     display: flex;
 }
 
@@ -253,7 +368,7 @@ border:none;
     height: 100%;
     border-right: 1px dotted grey;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .total{
@@ -309,7 +424,7 @@ border:none;
 }
 
 .departureDetails{
-    text-align: right;
+    /* text-align: right; */
     line-height: .4;
 
 }
@@ -319,6 +434,7 @@ margin-top: 0px;
 padding-top: 0px;
 color: grey;
 font-size: 12px;
+line-height: .9;
 }
 .departureDetails p:nth-child(4){
 color: grey;
@@ -340,18 +456,27 @@ color: grey;
 font-size: 12px;
 width: 100px;
 line-height: .4;
+/* border: 1px solid red; */
+margin-left: 50px;
 }
 .arrivalDetails{
 line-height: .4;
-margin-right: 70px;
+margin-left: 90px;
+
 }
+
+
 
 .arrivalDetails p:nth-child(3){
 margin-top: 0px;
 padding-top: 0px;
 color: grey;
+line-height: .9;
 font-size: 12px;
+text-overflow:unset;
 }
+
+
 .arrivalDetails p:nth-child(4){
 color: grey;
 font-size: 12px;
