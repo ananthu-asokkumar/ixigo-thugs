@@ -11,9 +11,9 @@ import BOOKNOW from "./Images/BOOKNOW.PNG";
 import rupeeBlack from "./Images/rupeeBlack.png";
 import rupeeOrange from "./Images/rupeeOrange.png";
 import { Link } from "react-router-dom";
-import AccessTimeRoundedIcon from '@mui/icons-material/AccessTimeRounded';
+import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import iconBlock from "./Images/iconBlock.PNG";
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 
 const BookingDropDown = ({ id }) => {
   const [myFlight, setMyFlight] = useState({});
@@ -47,9 +47,19 @@ const BookingDropDown = ({ id }) => {
   return (
     <>
       {id === isdropDown ? (
-        <Box sx={{ width: "100%", typography: "body1" ,backgroundColor:"white"}}>
+        <Box
+          sx={{ width: "100%", typography: "body1", backgroundColor: "white" }}
+        >
           <TabContext value={value}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider",borderTop:"1px dotted grey",marginBottom:"0px",paddingBottom:"0px"}}>
+            <Box
+              sx={{
+                borderBottom: 1,
+                borderColor: "divider",
+                borderTop: "1px dotted grey",
+                marginBottom: "0px",
+                paddingBottom: "0px",
+              }}
+            >
               <TabList
                 onChange={handleChange}
                 aria-label="lab API tabs example"
@@ -60,21 +70,20 @@ const BookingDropDown = ({ id }) => {
                 <Tab label="FARE DETAILS" value="4" />
               </TabList>
             </Box>
-            <TabPanel value="1" sx={{paddingTop:"0px"}}>
-                <div className={styles.topNav}>
-                              <img src={myFlight.image} height="30px" width="30px" alt="" />
-                              <p>{myFlight.flightName}</p>
-                              <ul className={styles.topList}>
-                                  <li>{myFlight.flightCode}</li>
-                                  <li>Economy</li>
-                                  <li>Narrow 3-3( Limited seat tilt)</li>
-                                  <li>Narrow</li>
-                              </ul>
-                              <p>usually on time</p>
-                              
-                </div>
+            <TabPanel value="1" sx={{ paddingTop: "0px" }}>
+              <div className={styles.topNav}>
+                <img src={myFlight.image} height="30px" width="30px" alt="" />
+                <p>{myFlight.flightName}</p>
+                <ul className={styles.topList}>
+                  <li>{myFlight.flightCode}</li>
+                  <li>Economy</li>
+                  <li>Narrow 3-3( Limited seat tilt)</li>
+                  <li>Narrow</li>
+                </ul>
+                <p>usually on time</p>
+              </div>
               <div className={`${styles.allFlights}`}>
-                 <div className={`${styles.details}`}>
+                <div className={`${styles.details}`}>
                   {/* <div className={`${styles.flightCode}`}>
                     <img
                       height="40px"
@@ -86,28 +95,29 @@ const BookingDropDown = ({ id }) => {
                     <p>{myFlight.flightCode}</p>
                   </div> */}
                   <div className={`${styles.departureDetails}`}>
-                    <p style={{ marginTop: "30px", fontSize: "22px", }}>
-                      {myFlight.departureCode}  {myFlight.departureTime}
+                    <p style={{ marginTop: "30px", fontSize: "22px" }}>
+                      {myFlight.departureCode} {myFlight.departureTime}
                     </p>
-                   
+
                     <p>{myFlight.departureDate}</p>
-                    <p>{ myFlight.departureAirPort}</p>
+                    <p>{myFlight.departureAirPort}</p>
                     <p>{myFlight.departurePlace}</p>
                   </div>
                   <div className={`${styles.nonStop}`}>
-                    <AccessTimeRoundedIcon sx={{marginLeft:"15px" }}/>
+                    <AccessTimeRoundedIcon sx={{ marginLeft: "15px" }} />
                     <p style={{}}>
                       {`${Math.floor(myFlight.durationInMin / 60)}hr  ${
                         myFlight.durationInMin % 60
                       }min`}{" "}
                     </p>
-              
                   </div>
                   <div className={`${styles.arrivalDetails}`}>
-                    <p style={{ marginTop: "30px",fontSize: "22px" }}>{myFlight.arrivalCode} {myFlight.arrivalTime}</p>
-                  
+                    <p style={{ marginTop: "30px", fontSize: "22px" }}>
+                      {myFlight.arrivalCode} {myFlight.arrivalTime}
+                    </p>
+
                     <p>{myFlight.arrivalDate}</p>
-                    <p>{ myFlight.arrivalAirport}</p>
+                    <p>{myFlight.arrivalAirport}</p>
                     <p>{myFlight.arrivalPlace}</p>
                   </div>
                 </div>
@@ -167,41 +177,84 @@ const BookingDropDown = ({ id }) => {
                       </p>
                     </div> */}
                   </div>
-                </div> 
+                </div>
               </div>
             </TabPanel>
             <TabPanel value="2">
-            <Grid container spacing={2} sx={{fontSize:"14px"}}>
-              <Grid item xs={6} sx={{textAlign:"center"}}>
-                Flight
+              <Grid container spacing={2} sx={{ fontSize: "14px" }}>
+                <Grid item xs={6} sx={{ textAlign: "center" }}>
+                  Flight
+                </Grid>
+                <Grid item xs={3} sx={{ textAlign: "center" }}>
+                  Cabin Baggage
+                </Grid>
+                <Grid item xs={3} sx={{ textAlign: "center" }}>
+                  Check-in-Baggage
+                </Grid>
               </Grid>
-              <Grid item xs={3} sx={{textAlign:"center"}}>
-                Cabin Baggage
+              <Grid
+                container
+                spacing={2}
+                style={{
+                  background: "rgb(243,243,243)",
+                  height: "63px",
+                  marginTop: "7px",
+                  fontSize: "14px",
+                }}
+              >
+                <Grid
+                  item
+                  xs={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRight: "1px dashed grey",
+                  }}
+                >
+                  <img
+                    src={myFlight.image}
+                    height="35px"
+                    width="50px"
+                    alt=""
+                    style={{ marginRight: "20px" }}
+                  />
+                  <div style={{ lineHeight: "0" }}>
+                    <p
+                      style={{
+                        marginTop: "0px",
+                        paddingTop: "10px",
+                        fontSize: "14px",
+                      }}
+                    >
+                      {myFlight.departureCode}-{myFlight.arrivalCode}
+                    </p>
+                    <p
+                      style={{
+                        marginTop: "0px",
+                        paddingTop: "8px",
+                        fontSize: "12px",
+                      }}
+                    >
+                      {myFlight.flightName}
+                      {myFlight.flightCode}
+                    </p>
+                  </div>
+                </Grid>
+                <Grid
+                  item
+                  xs={3}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    borderRight: "1px dashed grey",
+                  }}
+                >
+                  7kg
+                </Grid>
+                <Grid item xs={3} sx={{ textAlign: "center" }}>
+                  25 Kilogram
+                </Grid>
               </Grid>
-              <Grid item xs={3} sx={{textAlign:"center"}}>
-                Check-in-Baggage
-              </Grid>
-              
-              
-              </Grid>
-              <Grid container spacing={2} style={{background:"rgb(243,243,243)",height:"63px",marginTop:"7px",fontSize:"14px"}}>
-                <Grid item xs={6} sx={{display:"flex",justifyContent:"center",borderRight:"1px dashed grey"}}>
-                  <img src={myFlight.image} height="35px" width="50px" alt="" style={{marginRight:"20px"}} />
-                  <div style={{lineHeight:"0"}}>
-                    <p style={{marginTop:"0px",paddingTop:"10px",fontSize:"14px"}}>{myFlight.departureCode}-{ myFlight.arrivalCode}</p>
-                    <p style={{marginTop:"0px",paddingTop:"8px",fontSize:"12px"}}>{myFlight.flightName}{ myFlight.flightCode}</p>
-                </div>
-              </Grid>
-              <Grid item xs={3} sx={{display:"flex",justifyContent:"center",borderRight:"1px dashed grey"}}>
-                7kg
-              </Grid>
-              <Grid item xs={3}sx={{textAlign:"center"}}>
-                25 Kilogram
-              </Grid>
-              
-              
-            </Grid>
-            
             </TabPanel>
             <TabPanel value="3">
               <ul className={`${styles.lists}`}>
@@ -232,12 +285,30 @@ const BookingDropDown = ({ id }) => {
                 <div className={`${styles.assured}`}>
                   <div className={`${styles.header}`}>
                     <div>
-                        <div style={{ display:"flex",marginBottom:"0px",marginLeft:"10px"}}>
-                            <p style={{fontSize:"15px"}}>Assured</p>
-                            <img src="https://images.ixigo.com/image/upload/multi-fare/81f93fbf52c351405eb730cd24822c77-ekgbt.png" width="17px" height="17px" style={{marginTop:"15px",marginRight:"10px",marginLeft:"5px"}}  alt="" />
-                        </div>
-                      
-                      <p style={{marginLeft:"0px",marginTop:"0px"}}>at 599</p>
+                      <div
+                        style={{
+                          display: "flex",
+                          marginBottom: "0px",
+                          marginLeft: "10px",
+                        }}
+                      >
+                        <p style={{ fontSize: "15px" }}>Assured</p>
+                        <img
+                          src="https://images.ixigo.com/image/upload/multi-fare/81f93fbf52c351405eb730cd24822c77-ekgbt.png"
+                          width="17px"
+                          height="17px"
+                          style={{
+                            marginTop: "15px",
+                            marginRight: "10px",
+                            marginLeft: "5px",
+                          }}
+                          alt=""
+                        />
+                      </div>
+
+                      <p style={{ marginLeft: "0px", marginTop: "0px" }}>
+                        at 599
+                      </p>
                     </div>
                     <div>
                       <p>Rs{myFlight.basicPrice + 599}</p>
@@ -246,34 +317,104 @@ const BookingDropDown = ({ id }) => {
                   </div>
                   <div className={`${styles.assuredContent}`}>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/2d6040c342eaca50133446d58e649b7a-oegom.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/2d6040c342eaca50133446d58e649b7a-oegom.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>
                         Full refund of upto ₹5000 (over and above airline
                         refund) per person per route if you cancel
                       </p>
                     </div>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Get ₹500 Off with Code : INSTANT</p>
                     </div>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Get Ola, Gaana & Lenskart vouchers worth ₹2000</p>
                     </div>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Extra ₹100 ixigo money on UPI Payment</p>
                     </div>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/699038dc6075ceb407f2bc3cf4900778-vivxt.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/699038dc6075ceb407f2bc3cf4900778-vivxt.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Baggage loss & Trip delay of upto ₹10000</p>
                     </div>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/misc/d188a886171cc0f07a2c57e9f2186429-jgznt.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/misc/d188a886171cc0f07a2c57e9f2186429-jgznt.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Accidental hospitalisation of upto ₹3 Lakhs</p>
                     </div>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/2d6040c342eaca50133446d58e649b7a-oegom.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/2d6040c342eaca50133446d58e649b7a-oegom.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Free Cancellation Premium of ₹459 included</p>
                     </div>
                   </div>
@@ -286,18 +427,38 @@ const BookingDropDown = ({ id }) => {
                     </div>
                     <div>
                       <p>Rs{myFlight.basicPrice}</p>
-                      <Link to="/booknow">
+                      <Link to={`/booknow/${myFlight._id}`}>
                         <button className={`${styles.btnbook}`}>BOOK</button>
                       </Link>
                     </div>
                   </div>
                   <div className={`${styles.basicContent}`}>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}}alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Get ₹500 Off with Code : INSTANT</p>
                     </div>
                     <div className={`${styles.assuredItems}`}>
-                      <img src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png" width="17px" height="17px" style={{marginTop:"8px",marginRight:"10px",marginLeft:"5px"}} alt="" />
+                      <img
+                        src="https://images.ixigo.com/image/upload/multi-fare/efadd55349ca6b388290cf823238ea88-dkdpp.png"
+                        width="17px"
+                        height="17px"
+                        style={{
+                          marginTop: "8px",
+                          marginRight: "10px",
+                          marginLeft: "5px",
+                        }}
+                        alt=""
+                      />
                       <p>Extra ₹100 ixigo money on UPI Payment</p>
                     </div>
                     <p>Terms & Conditions</p>
