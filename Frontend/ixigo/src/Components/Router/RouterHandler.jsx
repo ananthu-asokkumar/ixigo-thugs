@@ -9,7 +9,7 @@ function RouterHandler() {
         <Route path="/" exact>
           <FlightBooking />
         </Route>
-        <Route path="/booknow/:id" exact>
+        <Route path="/booknow/:_id" exact>
           <PaymentMain />
         </Route>
 
