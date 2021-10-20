@@ -12,14 +12,16 @@ import ContinueButton from "../PayableAmount/ContinueButton";
 // import { useParams } from "react";
 
 function PaymentMain({ match }) {
+  const { _id } = useParams();
+  console.log(_id,"params");
   useEffect(() => {
     fetchItem();
-    console.log("matchData" + match);
+    
   }, []);
 
   const fetchItem = async () => {
     try {
-      let res = await fetch(`http://localhost:5000/flights/${match.id}`);
+      let res = await fetch(`http://localhost:5000/flights/${_id}`);
       const dataflight = await res.json();
       console.log(dataflight);
     } catch (err) {

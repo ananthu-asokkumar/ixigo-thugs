@@ -18,7 +18,7 @@ import Grid from "@mui/material/Grid";
 const BookingDropDown = ({ id }) => {
   const [myFlight, setMyFlight] = useState({});
   const { isdropDown, setIsDropDown } = useContext(BookingContext);
-  const [value, setValue] = useState("1");
+  const [value, setValue] = useState("4");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -105,7 +105,7 @@ const BookingDropDown = ({ id }) => {
                   </div>
                   <div className={`${styles.nonStop}`}>
                     <AccessTimeRoundedIcon sx={{ marginLeft: "15px" }} />
-                    <p style={{}}>
+                    <p style={{marginTop:"10px"}}>
                       {`${Math.floor(myFlight.durationInMin / 60)}hr  ${
                         myFlight.durationInMin % 60
                       }min`}{" "}
