@@ -298,7 +298,7 @@ const BookingDropDown = ({ id }) => {
                           width="17px"
                           height="17px"
                           style={{
-                            marginTop: "15px",
+                            marginTop: "2px",
                             marginRight: "10px",
                             marginLeft: "5px",
                           }}
@@ -461,7 +461,7 @@ const BookingDropDown = ({ id }) => {
                       />
                       <p>Extra ₹100 ixigo money on UPI Payment</p>
                     </div>
-                    <p>Terms & Conditions</p>
+                    <p style={{color:"grey",fontSize:"10px",marginLeft:"10px"}}>Terms & Conditions</p>
                   </div>
                 </div>
               </div>

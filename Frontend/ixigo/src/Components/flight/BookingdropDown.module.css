@@ -47,6 +47,9 @@
     display: flex;
     margin: 0px;
 }
+.assuredItems>p{
+    margin-top: 10px;
+}
 .basic{
     
      width: 40%;

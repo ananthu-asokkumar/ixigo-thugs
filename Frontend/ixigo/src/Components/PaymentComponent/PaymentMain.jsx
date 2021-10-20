@@ -1,28 +1,32 @@
 import SelectSeat from "./SelectSeat";
 import StepProgressBarComponent from "./StepProgressBarComponent";
 import { Route, useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import BasicDiscount from "./BasicDiscount";
 import WarningBookin from "./WarningBookin";
 import ContactDetails from "./ContactDetails";
 import OfferPage from "./OfferPage";
 import PayableAmount from "../PayableAmount/PayableAmount";
 import ContinueButton from "../PayableAmount/ContinueButton";
+// import useParams from "react-router-dom";
 // import { axios } from "axios";
-// import { useParams } from "react";
 
-function PaymentMain({ match }) {
+
+
+function PaymentMain() {
+  const [items, setItems] = useState({});
   const { _id } = useParams();
-  console.log(_id,"params");
+  console.log("flight" + _id);
   useEffect(() => {
     fetchItem();
-    
+
   }, []);
 
   const fetchItem = async () => {
     try {
       let res = await fetch(`http://localhost:5000/flights/${_id}`);
       const dataflight = await res.json();
+      setItems(dataflight);
       console.log(dataflight);
     } catch (err) {
       console.log("error", err);
@@ -38,7 +42,7 @@ function PaymentMain({ match }) {
       </div>
       <div className="row">
         <div className="col-9 m-0">
-          <SelectSeat />
+          <SelectSeat items={items} />
           <BasicDiscount />
           <WarningBookin />
           <ContactDetails />

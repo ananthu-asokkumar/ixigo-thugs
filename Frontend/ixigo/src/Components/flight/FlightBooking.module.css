@@ -256,6 +256,7 @@ border:none;
     justify-content: space-between;
 }
 
+
 .total{
     width: 40%;
     height: 100%;
@@ -263,6 +264,9 @@ border:none;
     justify-content: space-between;
 }
 
+/* .switch{
+    margin-right: 30px;
+} */
 
 .toggleSwitch {
     position: relative;
@@ -333,6 +337,9 @@ font-size: 12px;
 line-height: .4;
 margin-top: 30px;
 margin-left: 15px;
+}
+.flightCode>p:nth-child(2){
+    margin-top:7px;
 }
 .nonStop{
 margin-top: 30px;

@@ -230,12 +230,12 @@ const FlightBooking = () => {
                     <div><p style={{ marginBottom: "0px", fontSize: "15px", marginLeft: "20px" }}>Airlines</p></div>
                      <div className={`${styles.airlineCheckbox}`}>
                         <Checkbox {...label} checked={isAirIndia} onClick={()=>{handlechecked("AIR INDIA")}} style={{ color: "rgb(236,91,36) ", borderColor: "grey" }} />
-                        <div>
+                        <div style={{marginTop:"10px"}}>
                             <p>Air India</p>
                             <p>$5955</p>
                         </div>
                         <Checkbox {...label} checked={isAirAsia} onClick={()=>{handlechecked("AIRASIA INDIA")}} style={{ color: "rgb(236,91,36) ", borderColor: "grey" }} />
-                        <div>
+                        <div style={{marginTop:"10px"}}>
                             <p>AirAsia India</p>
                             <p>$5953</p>
                         </div>
@@ -243,12 +243,12 @@ const FlightBooking = () => {
                     </div>
                          <div className={`${styles.airlineCheckbox}`}>
                         <Checkbox {...label} checked={isGoFirst} onClick={()=>{handlechecked("GO FIRST")}} style={{ color: "rgb(236,91,36) ", borderColor: "grey" }} />
-                        <div>
+                        <div style={{marginTop:"10px"}}>
                             <p>GO FIRST</p>
                             <p>$5954</p>
                         </div>
                         <Checkbox {...label} checked={isIndigo} onClick={()=>{handlechecked("INDIGO")}} style={{ color: "rgb(236,91,36) ", borderColor: "grey" }} />
-                        <div>
+                        <div style={{marginTop:"10px"}}>
                             <p>IndiGO</p>
                             <p>$5955</p>
                         </div>
@@ -329,11 +329,11 @@ const FlightBooking = () => {
                                 </div>
                             </div>
                             <div className={`${styles.switch}`}>
-                                <label className={styles.toggleSwitch} style={{marginTop: "15px", marginLeft: "0px", marginRight: "2px"}}>
+                                <label className={styles.toggleSwitch} style={{marginTop: "15px", marginLeft: "15px", marginRight: "5px"}}>
                                     <input className={ styles.toggleInput} type="checkbox"/>
                                     <span className={ styles.toggleSlider}/>
                                 </label>
-                                <p style={{fontSize:"15px"}}>REMOVE</p>
+                                <p style={{fontSize:"15px",paddingTop:"10px"}}>REMOVE</p>
                             </div>
                             
                         </div>
@@ -402,43 +402,3 @@ const FlightBooking = () => {
 }
 
 export default FlightBooking
-
-   {/* <div div className={`${styles.allFlights}`}> */}
-                    {/* //     <div className={`${styles.details}`}>
-                    //         <div className={`${styles.flightCode}`}>
-                    //             <img height="40px" width="50px" src="https://images.ixigo.com/img/common-resources/airline-new/G8.png" alt="" />
-                    //             <p>flightname</p>
-                    //             <p>G*30</p>
-                    //         </div>
-                    //         <div className={`${styles.departureDetails}`}>
-                    //             <p style={{marginTop:"30px"}}>DEL</p>
-                    //             <p style={{fontSize:"20px",paddingBottom:"0px",fontWeight:"500"}}>06:15</p>
-                    //             <p>mon 04v0ct</p>
-                    //             <p>neew delhi</p>
-                    //         </div>
-                    //         <div className={`${styles.nonStop}`}>
-                    //             <p style={{marginLeft:"25px"}}>2hr 5 min</p>
-                    //             <hr />
-                    //             <p style={{marginLeft:"25px"}}>non stop</p>
-                    //         </div>
-                    //         <div className={`${styles.arrivalDetails}`}>
-                    //             <p style={{marginTop:"30px"}}>BOm</p>
-                    //             <p style={{fontSize:"20px",paddingBottom:"0px",fontWeight:"500"}}>08:20</p>
-                    //             <p>mon 04 Oct</p>
-                    //             <p>Mumbai</p>
-                    //         </div>
-                    //     </div>
-                    //     <div className={`${styles.total}`}>
-                    //         <div style={{lineHeight:"0cm", marginTop:"20px"}}>
-                    //             <div style={{display:"flex",lineHeight:"0cm",marginBottom:"0px",paddingBottom:"0px",marginLeft:"20px"}}>
-                    //                 <img style={{marginTop:"20px",marginBottom:"0px"}} height="15px" width="15px" src={rupeeOrange} alt="" />
-                    //                 <p style={{marginTop:"26px",color:"rgb(236,91,36)",fontWeight:"bold",fontSize:"23px"}}>5954</p>
-                    //             </div>
-                    //             <div style={{display:"flex",marginTop:"0px",lineHeight:"0cm",paddingTop:"0px",marginLeft:"20px"}}>
-                    //                 <img  height="10px" width="10px" src={rupeeOrange} alt="" />
-                    //                 <p style={{fontSize:"10px",marginTop:"5px",color:"rgb(236,91,36)"}}>800 instant off</p>
-                    //             </div>
-                    //         </div>
-                    //         <button className={`${styles.Bookbtn}`}>BOOK</button>
-                    //     </div>
-                    // </div> */}

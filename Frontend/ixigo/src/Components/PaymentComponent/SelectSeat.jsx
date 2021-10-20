@@ -1,12 +1,23 @@
 import React from "react";
 import "./SelectSeat.css";
-import BagFareCondition from "./BagFareCondition";
+import { useState } from "react";
+// import BagFareCondition from "./BagFareCondition";
 import { Route } from "react-router-dom";
 import FlightCabinBag from "./FlightCabinBag";
 import Farerules from "./FareRules";
 import TermsCondition from "./TermsCondition";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
 // style={{ width: "80rem", height: "10rem" }}
-function SelectSeat() {
+function SelectSeat({ items }) {
+  const [value, setValue] = React.useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <div>
       <div className="card m-2">
@@ -14,22 +25,27 @@ function SelectSeat() {
           className="d-flex  justify-content-between p-2"
           style={{ backgroundColor: "#E1E1E1" }}
         >
-          <div style={{ color: "rgba(0,0,0,.64)" }}>New Delhi to Mumbai</div>
+          <div style={{ color: "rgba(0,0,0,.64)" }}>
+            {items.departurePlace} to {items.arrivalPlace}
+          </div>
           <div style={{ fontWeight: "600", color: "rgba(0,0,0,.64)" }}>
-            Mon,18 Oct, 2 hr
+            {items.arrivalDate},
+            {`${Math.floor(items.durationInMin / 60)}hr ${
+              items.durationInMin % 60
+            }min`}
           </div>
         </div>
         <div>
           <div className="d-flex container-fluid p-2 ">
             <img
-              src="https://images.ixigo.com/img/common-resources/airline-new/UK.png"
+              src={items.image}
               alt=""
               style={{ width: "4%", height: "20%" }}
             />
-            <span>Vistara UK975</span>
+            <span>{items.flightName}</span>
             <ul className="d-flex">
-              <li className="mx-2">A320</li>
-              <li className="mx-3">Economy</li>
+              <li className="mx-2">{items.flightCode}</li>
+              <li className="mx-3">{items.flightClass}</li>
               <li className="mx-3">Standard (Limited seat tilt)</li>
               <li className="mx-2">Narrow</li>
             </ul>
@@ -47,14 +63,14 @@ function SelectSeat() {
                 <div className="row">
                   <div className="col-5">
                     <span>
-                      DEL <b>06.00</b>
+                      {items.departureCode} <b>{items.departureTime}</b>
                     </span>
                     <br />
-                    <span>Mon, 18 Oct</span>
+                    <span>{items.departureDate}</span>
                     <br />
-                    <span>Indira Gandhi Intl Airport</span>
+                    <span>{items.departureAirPort}</span>
                     <br />
-                    <span>New Delhi</span>
+                    <span>{items.departurePlace}</span>
                   </div>
                   <div className="col-2 ">
                     <i
@@ -62,18 +78,20 @@ function SelectSeat() {
                       style={{ fontSize: "2rem" }}
                     ></i>
                     <br />
-                    <span>2 hr</span>
+                    <span>{`${Math.floor(items.durationInMin / 60)}hr ${
+                      items.durationInMin % 60
+                    }min`}</span>
                   </div>
                   <div className="col-5">
                     <span>
-                      BOM <b>08.00</b>
+                      {items.arrivalCode} <b>{items.arrivalTime}</b>
                     </span>
                     <br />
-                    <span>Mon, 18 Oct</span>
+                    <span>{items.arrivalDate}</span>
                     <br />
-                    <span>Chatrapati Shivaji...</span>
+                    <span>{items.arrivalAirport}</span>
                     <br />
-                    <span>Mumbai</span>
+                    <span>{items.arrivalPlace}</span>
                   </div>
                 </div>
               </div>
@@ -110,8 +128,32 @@ function SelectSeat() {
           </div>
         </div>
         <div className="mt-3" style={{ border: "1px  dashed gray" }}></div>
-        <BagFareCondition />
-        <Route path="/baggage">
+        <Box sx={{ width: "100%", typography: "body1" }}>
+          <TabContext value={value}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <TabList
+                onChange={handleChange}
+                aria-label="lab API tabs example"
+              >
+                <Tab label="Item One" value="1" />
+                <Tab label="Item Two" value="2" />
+                <Tab label="Item Three" value="3" />
+              </TabList>
+            </Box>
+            <TabPanel value="1">
+              <FlightCabinBag />
+            </TabPanel>
+            <TabPanel value="2">
+              <Farerules />
+            </TabPanel>
+            <TabPanel value="3">
+              <TermsCondition />
+            </TabPanel>
+          </TabContext>
+        </Box>
+
+        {/* <BagFareCondition />
+        <Route path="/_id/baggage">
           <FlightCabinBag />
         </Route>
         <Route path="/farerules">
@@ -119,7 +161,7 @@ function SelectSeat() {
         </Route>
         <Route path="/term&condition">
           <TermsCondition />
-        </Route>
+        </Route> */}
       </div>
 
       {/* <div className="container-fluid">
