@@ -15,17 +15,18 @@ export default function ContactDetails() {
   };
 
   return (
-    <div className="card m-2 ">
+    <div className="card m-2 p-3">
       <div className="d-flex">
         <div>
-          <label>Mobile Number</label>
+          <label style={{ marginLeft: "2.5rem" }}>Mobile Number</label>
           <PhoneInput
             placeholder="Enter phone number"
             value={value}
             onChange={setValue}
+            style={{ outLine: "none" }}
           />
         </div>
-        <div>
+        <div style={{ marginLeft: "2rem" }}>
           <label>email</label>
           <br />
           <input
@@ -41,8 +42,10 @@ export default function ContactDetails() {
           />
         </div>
       </div>
-      <div className="d-flex">
-        <span>I would like to add my GSTIN (optional) </span>
+      <div className="d-flex " style={{ marginTop: "2rem" }}>
+        <span style={{ marginTop: "0.5rem" }}>
+          I would like to add my GSTIN (optional){" "}
+        </span>
         <div className="form-check form-switch">
           <Switch
             checked={checked}

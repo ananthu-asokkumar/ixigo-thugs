@@ -46,7 +46,7 @@ function PaymentMain() {
         </div>
         <div className="col-3 m-0">
           <OfferPage />
-          <PayableAmount />
+          <PayableAmount items={ items}/>
           <ContinueButton />
         </div>
       </div>

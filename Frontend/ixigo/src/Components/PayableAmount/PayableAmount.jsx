@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-function PayableAmount() {
+function PayableAmount({ items }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -40,8 +40,8 @@ function PayableAmount() {
             </div>
             <div>
               <p>partially refundable</p>
-              <p style={{ marginLeft: "80px" }}>3938</p>
-              <p style={{ marginLeft: "90px" }}> 837</p>
+              <p style={{ marginLeft: "90px" }}>5754</p>
+              <p style={{ marginLeft: "90px" }}> 1000</p>
             </div>
           </div>
           <hr className="m-3" />
@@ -51,8 +51,8 @@ function PayableAmount() {
               <p>Amount Payable</p>
             </div>
             <div>
-              <p>300</p>
-              <p>500</p>
+              <p>{items.offPrice}</p>
+              <p>{items.basicPrice}</p>
             </div>
           </div>
         </div>

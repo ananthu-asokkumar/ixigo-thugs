@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import PaymentMain from "../PaymentComponent/PaymentMain";
 import FlightBooking from "../flight/FlightBooking";
+import CustomerForm from "../CustomerDetails/CustomerForm";
 function RouterHandler() {
   return (
     <div>
@@ -14,7 +15,7 @@ function RouterHandler() {
         </Route>
 
         <Route path="/payment" exact>
-          <div>wellcome</div>
+          <CustomerForm />
         </Route>
       </switch>
     </div>

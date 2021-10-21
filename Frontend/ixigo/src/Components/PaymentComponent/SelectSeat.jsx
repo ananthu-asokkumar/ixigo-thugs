@@ -135,13 +135,13 @@ function SelectSeat({ items }) {
                 onChange={handleChange}
                 aria-label="lab API tabs example"
               >
-                <Tab label="Item One" value="1" />
-                <Tab label="Item Two" value="2" />
-                <Tab label="Item Three" value="3" />
+                <Tab label="BAGGES" value="1" />
+                <Tab label="FARERULES" value="2" />
+                <Tab label="TERMS&CONDITION" value="3" />
               </TabList>
             </Box>
             <TabPanel value="1">
-              <FlightCabinBag />
+              <FlightCabinBag items={items} />
             </TabPanel>
             <TabPanel value="2">
               <Farerules />
