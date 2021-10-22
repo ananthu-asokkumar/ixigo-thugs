@@ -1,0 +1,255 @@
+.payment__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 67px;
+  margin: auto;
+}
+
+.payment__header img {
+  width: 50%;
+}
+
+.payment__status {
+  width: 95%;
+  height: 90px;
+  background-color: #721053;
+  margin-bottom: 10px;
+  color: #fff;
+  background: #721053;
+  background: -webkit-linear-gradient(45deg, #721053, #ad2e41);
+}
+
+.payment__cont {
+  display: flex;
+  width: 100%;
+  min-height: 700px;
+  gap: 20px;
+}
+
+.payment__left {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+}
+.payment__right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.payment__bookingDetails {
+  min-height: 160px;
+  width: 100%;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.payment__bookingDetailsCont {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+}
+.payment__bookingDetailsCont > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  padding-left: 20px;
+}
+.payment__bookingDetailsContR > div {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 5px;
+  justify-content: space-between;
+  height: 50px;
+  padding-right: 50px;
+}
+.payment__bookingDetails > div {
+  width: 50%;
+}
+.payment__modify {
+  outline: none;
+  border: none;
+  color: orangered;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.payment__points p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.payment__places p {
+  color: gray;
+}
+
+.payment__travellerForm {
+  height: 195px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+.payment__travellerForm_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.payment__contactForm {
+  height: 148px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.payment__contactForm1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: lightgray;
+}
+.payment__contactformTitle {
+  font-size: 16px;
+}
+.payment__contactformText {
+  color: gray;
+  font-size: 14px;
+}
+
+.payment__offerCont {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 380px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.payment__offerContTitle {
+  width: 97%;
+  background-color: lightgray;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10px;
+}
+
+.payment__checkbox {
+  line-height: 8px;
+  border-bottom: 1px solid gray;
+}
+
+.payment__checkbox p {
+  margin-left: 25px;
+}
+.payment__checkbox label {
+  font-weight: 600;
+}
+.payment__couponCont {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.orangered {
+  color: orangered;
+  padding-left: 10px;
+}
+
+.payement_fair {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 30px;
+}
+.payement_fairSummary {
+  width: 97%;
+  height: 41px;
+  background-color: lightgray;
+  padding-left: 10px;
+}
+
+.payement_fairSummary button {
+  border: none;
+  outline: none;
+  margin-left: 40px;
+  background-color: lightgray;
+}
+
+.payment__cal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.payment__gray {
+  color: gray;
+}
+.payment__green {
+  color: green;
+}
+.payment__orange {
+  color: orangered;
+}
+
+.payment__button {
+  background-color: orangered;
+  width: 300px;
+  height: 45px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+}
+.payment__policy {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.gateway__flex_bg {
+  background-color: #fff;
+}
+
+.payment__footer {
+  display: flex;
+  background-color: #3a1248;
+  width: 100%;
+  height: 50px;
+}
+.payment__footerLeft {
+  width: 60%;
+  display: flex;
+  gap: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500px;
+  padding-left: 10px;
+}
+.payment__footerRight {
+  display: flex;
+  margin-left: 400px;
+  margin-top: 10px;
+}
+
+.payment__redWarning{
+  color: red;
+}
+
+.payment__round {
+  border-radius: 50%;
+}

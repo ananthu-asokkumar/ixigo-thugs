@@ -1,0 +1,132 @@
+.navbar__cont {
+  width: 100%;
+  height: 510px;
+  background-size: 100%;
+  background-image: url(https://images.ixigo.com/image/upload/f_auto/banner/b4ba97cd0798fae290bed61810acdbd5-ohopa.jpg);
+  /* background-image: url(https://images.ixigo.com/image/upload/q_80/banner/30a502c2a62b2bdd7ce623f50922343c-xtczk.jpg); */
+}
+
+.navbar__cont > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar__header {
+  height: 59px;
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.navbar__header > div > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.774);
+  font-weight: 500;
+  line-height: 27.5px;
+}
+.navbar__header > div > a:hover {
+  color: white;
+}
+
+.navbar__logo img {
+  height: 35px;
+}
+
+.navbar__busIcon {
+  display: flex;
+  width: 30%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+
+.navbar__busIcon p {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.navbar__searchCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  padding: 12px 20px 15px 20px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+}
+.navbar__searchCont > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50px;
+}
+.navbar___input {
+  display: flex;
+}
+.navbar___input input {
+  width: 260px;
+  border: none;
+  border-bottom: 1px solid rgb(165, 162, 162);
+  padding: 5px 10px;
+  outline: none;
+}
+.navbar___input input:hover {
+  border-bottom: 1px solid orangered;
+}
+.navbar___input button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+.navbar__searchBtn button {
+  width: 196px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 7px;
+  background-color: orangered;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+.navbar__text {
+  font-size: 12px;
+  color: gray;
+}
+
+.navbar__profilePic {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+}
+.navbar__offerDiv {
+  height: 140px;
+  width: 100vw;
+  margin-top: 120px;
+  background-color: rgb(235, 231, 231);
+}
+.navbar__offerDiv > img {
+  margin-left: 8%;
+  margin-top: -35px;
+  box-shadow: 2px 2px 5px #b1afaf;
+}
+
+.round {
+  border-radius: 50%;
+}
+.navbar__red{
+  color: red;
+}
