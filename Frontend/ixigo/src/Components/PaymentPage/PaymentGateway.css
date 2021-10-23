@@ -1,0 +1,125 @@
+.gateway__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 67px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.gateway__header img {
+  width: 50%;
+}
+
+.gateway__cont {
+  width: 100%;
+  height: 580px;
+  border: 1px solid rgba(255, 0, 0, 0);
+  background-color: rgba(128, 128, 128, 0.131);
+  
+}
+.gateway__title {
+  display: flex;
+  width: 70%;
+  background-color: #fff;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  margin-left: 205px;
+  margin-bottom: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.gateway__upiCont {
+  height: 350px;
+  width: 950px;
+  margin: auto;
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.gateway__upiContLeft {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+.gateway__upiContRight {
+  width: 65%;
+  background-color: #fff;
+}
+
+.gateway__flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+  color: gray;
+}
+
+.gateway__upiContRight > div {
+  width: 70%;
+  margin: auto;
+  border: 1px solid lightgrey;
+  margin-top: 30px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  gap: 20px;
+}
+.gateway__upiContRight button {
+  border: none;
+  outline: none;
+  min-width: 150px;
+  height: 40px;
+  background-color: orangered;
+  color: #fff;
+  font-weight: 500;
+}
+.gateway__icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 40px;
+}
+.gateway__iconTitle{
+ margin-left: 600px;
+ color: gray;
+ font-size: 10px;
+}
+
+.gateway__footer{
+  width: 100%;
+  height: 60px;
+  background-color: #2E013D;
+  height: 53px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+
+.gateway__modalCont{
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px
+}
+.gateway__modalGreen{
+  color: green;
+}
+.gateway__modalGray{
+  color: gray;
+}

@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.first_Container {
+  height: 100px;
+  width: 100vw;
+  background-color: #550f5d;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: "-webkit-match-parent";
+  display: block;
+}
+.text {
+  float: left;
+}
+.text > p {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10vw;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: "-webkit-match-parent";
+  margin-bottom: 9px;
+  margin-top: 30px;
+}
+span {
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10vw;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: "-webkit-match-parent";
+
+  margin-bottom: px;
+}
+.email_input {
+  float: left;
+  margin-left: 28vw;
+  margin-top: 5.8vh;
+  font-size: 18px;
+  width: 200px;
+
+  background-color: #550f5d;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 2px 7px;
+  color: #fff;
+}
+.email_button {
+  float: right;
+  margin-right: 6vw;
+  margin-top: 32px;
+  background-color: #ec5b24;
+  color: #fff;
+  padding: 8px 20px;
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: "-webkit-match-parent";
+  font-size: 14px;
+  border: none;
+}
+.email_input:hover {
+  border-bottom: 1px solid orangered;
+}
+
+/*second continer*/
+
+.Footer_second_container {
+  background-color: #3a1248;
+  height: 40vh;
+  width: 100vw;
+}
+.Footer_third_container {
+  background-color: #2e013d;
+  height: 5vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.footer_button {
+  width: 80vw;
+  margin: 0px 10vw;
+  height: 40px;
+  color: #fff;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.link {
+  font-size: 16px;
+  margin-right: 25px;
+  height: 40px;
+  width: auto;
+  padding: 20px 0px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  position: relative;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #3a1248;
+  text-decoration: none;
+  text-align: "-webkit-match-parent"
+}
+.footerDescription {
+  height: 6vh;
+  width: 40vw;
+  margin: 10px 10vw;
+  display: flex;
+  /* justify-content:space-around;
+  align-items: center; */
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: "-webkit-match-parent"
+}
+.footerDescription > li {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: "-webkit-match-parent"
+}
+.boxmargin {
+  width: 80vw;
+  height: 20vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 10px 10vw;
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 5px 0px #2e013d;
+  text-align: "-webkit-match-parent"
+}
+.boxmargin > h3 {
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+  text-align: "-webkit-match-parent"
+}
+.boxmargin > p {
+  font-size: 12px;
+}
+
+/* popular bus routes */
+
+.Routes_flot {
+  width: 16vw;
+  height: 30px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  float: left;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-top: 8px;
+  font: 12px/1.7 "Open Sans",Helvetica,Arial,sans-serif;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: "-webkit-match-parent"
+}
+span {
+  display: flex;
+  justify-content:space-around;
+}

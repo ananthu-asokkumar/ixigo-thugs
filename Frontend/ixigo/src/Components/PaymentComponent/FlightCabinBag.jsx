@@ -1,6 +1,6 @@
 import React from "react";
 
-function FlightCabinBag() {
+function FlightCabinBag({ items }) {
   return (
     <div>
       <div className="container-fluid">
@@ -13,7 +13,9 @@ function FlightCabinBag() {
           <div className="col-4">Check-in Baggage</div>
         </div>
         <div className="row p-3" style={{ backgroundColor: "#F3F3F3" }}>
-          <div className="col-4">DEL-BOM</div>
+          <div className="col-4">
+            {items.departureCode}-{items.arrivalCode}
+          </div>
           <div className="col-4">7 kg</div>
           <div className="col-4">25 Kilograms</div>
         </div>
