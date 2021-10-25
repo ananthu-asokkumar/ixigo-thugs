@@ -27,9 +27,9 @@ body {
   margin-top: 30px;
 }
 span {
-  font-size: 14px;
-  color: #fff;
-  margin-left: 10vw;
+  /* font-size: 14px; */
+  /* color: #fff; */
+  /* margin-left: 10vw; */
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   text-align: "-webkit-match-parent";
 
@@ -166,6 +166,6 @@ span {
   text-align: "-webkit-match-parent"
 }
 span {
-  display: flex;
-  justify-content:space-around;
+  /* display: flex; */
+  /* justify-content:space-around; */
 }

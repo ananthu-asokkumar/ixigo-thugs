@@ -192,7 +192,7 @@ const FlightBooking = () => {
                 </div>
                 <button className={`${styles.searchbtn}`}>SEARCH</button>
             </div>
-            <div className={`${styles.filterbar}`}>
+            <div className={`${styles.filterbars}`}>
                
                 <div className={`${styles.stops}`}>
                      <p style={{marginBottom:"0px",fontSize:"15px"}}>Stops</p>
@@ -321,7 +321,7 @@ const FlightBooking = () => {
                         <div className={`${styles.reccomended}`}>
                             <img style={{ marginTop: "5px" }} src={thumpsicon} height="50px" alt="" />
                             <div>
-                            <p style={{fontSize:"12px",paddingBottom:"0px",marginBottom:"0px"}}>Awesome! We will notify you when the fare for this route drops.</p>
+                            <p style={{fontSize:"12px",paddingBottom:"0px",marginBottom:"0px",paddingTop:"10px"}}>Awesome! We will notify you when the fare for this route drops.</p>
         
                                 <div style={{ display:"flex"}}>
                                     <p style={{fontSize:"12px",paddingTop:"0px",marginTop:"4px",marginRight:"10px"}}>You can also modify your alert.</p>
@@ -346,7 +346,7 @@ const FlightBooking = () => {
                             <div className={`${styles.details}`}>
                                 <div className={`${styles.flightCode}`}>
                                     <img height="40px" width="50px" src={e.image} alt="" />
-                                    <p>{e.flightName }</p>
+                                        <p style={{ paddingTop:"7px"}}>{e.flightName }</p>
                                     <p>{e.flightCode }</p>
                                 </div>
                                 <div className={`${styles.departureDetails}`}>

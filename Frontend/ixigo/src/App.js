@@ -5,7 +5,7 @@ import Routes from "../src/Components/Routes/Routes";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       {/* <Router /> */}
       <Routes />
     </div>

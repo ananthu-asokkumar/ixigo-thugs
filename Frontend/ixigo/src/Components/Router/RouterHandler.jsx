@@ -1,4 +1,4 @@
-/* import React from "react";
+import React from "react";
 import { Route } from "react-router-dom";
 import PaymentMain from "../PaymentComponent/PaymentMain";
 import FlightBooking from "../flight/FlightBooking";
@@ -23,4 +23,3 @@ function RouterHandler() {
 }
 
 export default RouterHandler;
- */

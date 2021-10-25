@@ -11,15 +11,12 @@ import ContinueButton from "../PayableAmount/ContinueButton";
 // import useParams from "react-router-dom";
 // import { axios } from "axios";
 
-
-
 function PaymentMain() {
   const [items, setItems] = useState({});
   const { _id } = useParams();
   console.log("flight" + _id);
   useEffect(() => {
     fetchItem();
-
   }, []);
 
   const fetchItem = async () => {
@@ -32,7 +29,7 @@ function PaymentMain() {
       console.log("error", err);
     }
   };
-
+console.log("KKKK",items);
   return (
     <div className="container-fluid  m-auto" style={{}}>
       <div className="row mx-0">
@@ -50,7 +47,7 @@ function PaymentMain() {
         <div className="col-3 m-0">
           <OfferPage />
           <PayableAmount items={ items}/>
-          <ContinueButton />
+          <ContinueButton items={items}/>
         </div>
       </div>
     </div>

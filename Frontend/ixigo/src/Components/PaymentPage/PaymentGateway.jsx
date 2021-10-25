@@ -1,5 +1,5 @@
 //import React, { useContext } from "react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./PaymentGateway.css";
 import CreditCardIcon from "@material-ui/icons/CreditCard";
@@ -10,8 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import { useHistory } from "react-router";
-
+import { useHistory, useParams } from "react-router";
+import axios from 'axios';
 const useStyles = makeStyles((theme) => ({
     modal: {
         display: "flex",
@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const PaymentGateway = () => {
+    
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     let orderId = Math.floor(Math.random() * 10000000000000000 + 1);
@@ -83,6 +84,29 @@ const PaymentGateway = () => {
         Mobile,
         orderId,
     };  */
+    const [MyFlight, setMyFlight] = useState({});
+    const { _id } = useParams();
+  console.log("flight" + _id);
+ useEffect(() => {
+    getAllFlights();
+
+    return () => {};
+  }, []);
+
+  console.log(_id);
+  const getAllFlights = async () => {
+    try {
+      let res = await axios.get(`http://localhost:5000/flights/${_id}`);
+      console.log(res, "myflight");
+      setMyFlight(res.data);
+    } catch (err) {
+      console.log("error", err);
+    }
+  };
+    const { basicPrice } = MyFlight;
+  
+    console.log("basicPrice",basicPrice);
+
     return (
         <>
             <div className="gateway__header">
@@ -101,7 +125,7 @@ const PaymentGateway = () => {
             <div className="gateway__cont">
                 <div className="gateway__title">
                     <p>AMOUNT TO PAY</p>
-                    {/* <h4> ₹ {total}&nbsp; &nbsp; </h4> */}
+                    <h4> ₹ {basicPrice}</h4>
                 </div>
                 <div className="gateway__upiCont">
                     <div className="gateway__upiContLeft">

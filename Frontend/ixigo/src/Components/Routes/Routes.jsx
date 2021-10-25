@@ -20,12 +20,13 @@ const Routes = () => {
                 <Route path="/search">
                     <Search />
                 </Route>
-                <Route exact path="/payment">
-                    <PaymentPage />
+                <Route exact path="/payment/:_id">
+                    {/* <PaymentPage/> */}
+                     <PaymentGateway />
                 </Route>
-                <Route exact path="/payment/gateway">
+                {/* <Route exact path="/payment/gateway">
                     <PaymentGateway />
-                </Route>
+                </Route> */}
                 {/* <Route path='/trips'>
                     <Trips />
                 </Route> */}
@@ -35,10 +36,11 @@ const Routes = () => {
                 <Route path="/booknow/:_id" exact>
                     <PaymentMain />
                 </Route>
-
+{/* 
                 <Route path="/payment" exact>
-                    <CustomerForm />
-                </Route>
+                     <CustomerForm /> 
+                    <PaymentGateway/>
+                </Route> */}
             </Switch>
         </div>
     );

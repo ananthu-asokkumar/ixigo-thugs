@@ -453,6 +453,9 @@ line-height: .4;
 margin-top: 30px;
 margin-left: 15px;
 }
+.flightCode>p:nth-child(1){
+    margin-top:10px;
+}
 .nonStop{
 margin-top: 30px;
 color: grey;
