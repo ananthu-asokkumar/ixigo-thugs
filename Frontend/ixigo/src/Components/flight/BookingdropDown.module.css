@@ -1,0 +1,534 @@
+
+
+.dropDownContainer{
+    width: 100%;
+    /* height: 420px; */
+    display: flex;
+    margin-bottom: 2px;
+    /* border:1px solid red; */
+}
+.booknow{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    background: white;
+    /* height: 300px; */
+}
+.refundable{
+    z-index: 1;
+}
+.assured{
+    box-shadow: 0px 0px 4px grey;
+    width: 40%;
+    /* border: 1px solid black; */
+    margin-right: 30px;
+    margin-left: 20px;
+    /* position: absolute; */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px dotted grey;
+}
+.header > div:first-child > p{
+    padding-left: 10px;
+}
+
+.assuredheader{
+    font-size: 10rem;
+}
+.assuredContent{
+    font-size:12px;
+    line-height:.9;
+    /* border: 1px solid green; */
+}
+.assuredItems{
+    display: flex;
+    margin: 0px;
+}
+.assuredItems>p{
+    margin-top: 10px;
+}
+.basic{
+    
+     width: 40%;
+    
+    /* border: 1px solid green; */
+    box-shadow: 0px 0px 4px grey;
+}
+.basicContent{
+     font-size:12px;
+    line-height:.9;
+}
+.btnbook{
+    border: .5px solid rgb(236,91,36);
+    color: rgb(236,91,36);
+    background: white;
+}
+
+.lists{
+    font-size: 15px;
+    background: white;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+
+.topNav{
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+    border-bottom: 1px dashed grey;
+    display: flex;
+    color:gray;
+    font-size: 12px;
+}
+.topNav>img, .topNav>p{
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.topNav>p:last-child{
+    color: green;
+    font-size: 12px;
+    margin-left:80px
+}
+
+.topList{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+     /* border: 1px solid grey; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*      rewrewre */
+body{
+     background-color: rgb(242,242,242);
+}
+
+
+.searchbar{
+    width:100%;
+    height: 70px;
+    background-color: rgb(167,43,67);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.searchbar input{
+    background-color:rgb(167,43,67) ;
+
+}
+.searchbar input:focus{
+    outline: none !important;
+}
+.searchbtn{
+    background-color:rgb(236,91,36) ;
+    width:150px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.searchbtn:hover{
+    cursor: pointer;
+}
+.filterbar{
+    width:100%;
+    display: flex;
+    height: 110px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 7px grey;
+    background-color: white;
+}
+
+.stops{
+width: 25%;
+height: 100%;
+border-right: 1px dotted grey;
+}
+.departure{
+width: 33%;
+height: 100%;
+border-right: 1px dotted grey;
+}
+.airlines{
+width: 42%;
+height: 100%;
+}
+.contentContainer{
+    background-color: rgb(242,242,242);
+    height: 100vw;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.dateAndFilter{
+   display: flex;
+   flex-wrap: wrap;
+    /* margin-left: 4%; */
+    background-color: rgb(242,242,242);
+    height: 160px;
+    width: 100%;
+    /* box-shadow: 0px 0px 7px grey; */
+    padding-bottom: 0px;
+
+}
+.dateSlider{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 0px 7px grey;
+    display: flex;
+}
+
+.dateSlides{
+    width:14.5%;
+    height: 100%;
+    border: 1px dotted grey;
+    line-height: 0cm;
+}
+.dateArrow{
+    width: 5%;
+    height: 71%;
+    padding-top: 17px;
+    align-items: center;
+    justify-content: center;
+
+}
+.dateArrow:hover{
+    cursor: pointer;
+}
+.reccomended{
+    background-color: white;
+    width:75%;
+    height: 60px;
+    box-shadow: 0px 0px 7px grey;
+    margin-top: 0px;
+    display: flex;
+    padding-bottom: 0px;
+    /* flex-wrap: wrap; */
+
+}
+
+
+.sortby{
+margin-top: 0px;
+height: 60px;
+width: 20%;
+margin-left: 5%;
+background-color: white;
+border:none;
+ box-shadow: 0px 0px 7px grey;
+ padding-bottom: 0px;
+}
+
+.stopCheckbox{
+    display: flex;
+    margin-left: 35px;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    margin-top: 0px;
+}
+
+
+
+.stops>p{
+    margin-left: 50px;
+}
+
+.checkBoxStop{
+    margin-left: 20px;
+     /* border: 1px solid red; */
+}
+ /* .stopCheckbox{
+    /* border: 1px solid red; */
+    /* margin-left: 35px; */
+/* } */ 
+
+
+/* .stopCheckbox {
+    height: 18px;
+   width:18px;
+    margin-top: 5px;
+}
+    /* color: orange; */
+
+
+/* .stopCheckbox input:checked{
+    background-color: orange;
+    border-color: orange;
+    color: orange;
+} */
+
+.stopCheckbox p{
+    font-size: 12px;
+   margin-top: 12px;
+   margin-left: 0px;
+}
+.refundable{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 0px;
+    /* border: 1px solid red; */
+}
+
+.refundable p{
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.departureBtn{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.depBtn{
+    height: 25px;
+    font-size: 12px;
+}
+
+.depBtn:hover{
+    color: rgb(236,91,36);
+    cursor: pointer;
+}
+.daytime{
+    display: flex;
+    
+    
+}
+.daytime p{
+     font-size: 12px; 
+   margin-left: 25px;
+}
+
+.daytime p:nth-child(2){
+   font-size: 12px; 
+   margin-left: 40px;
+}
+.daytime p:nth-child(3){
+   font-size: 12px; 
+   margin-left: 50px;
+}
+.daytime p:nth-child(4){
+   font-size: 12px; 
+   margin-left: 60px;
+}
+
+.airlineCheckbox{
+    /* border: 1px solid blue; */
+    display: flex;
+    height: 40px !important;
+    padding: 0px;
+}
+
+.airlineCheckbox p{
+    font-size: 12px;
+    padding-top: 0px;
+}
+
+.airlineCheckbox div{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 150px;
+}
+
+.allFlights{
+    margin-top: 10px;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    /* box-shadow: 0px 0px 2px grey; */
+    display: flex;
+}
+
+.details{
+    width: 60%;
+    height: 100%;
+    border-right: 1px dotted grey;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.total{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.toggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 16px;
+    border-radius: 20px;
+    
+    /* background-color: red; */
+}
+.toggleInput {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    /* margin-top: 10px; */
+}
+.toggleSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+.toggleSlider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    right:3px;
+    bottom: 2px;
+    transition: 0.4s;
+    border-radius: 50%;
+    background-color: white;
+}
+.toggleInput:checked + .toggleSlider {
+    background-color: rgb(236,91,36);
+}
+.toggleInput:checked + .toggleSlider:before {
+    transform: translate(26px);
+}
+
+.departureDetails{
+    /* text-align: right; */
+    line-height: .4;
+
+}
+
+.departureDetails p:nth-child(3){
+margin-top: 0px;
+padding-top: 0px;
+color: grey;
+font-size: 12px;
+line-height: .9;
+}
+.departureDetails p:nth-child(4){
+color: grey;
+font-size: 12px;
+margin-top: 0px;
+padding-top: 0px;
+}
+
+.flightCode{
+color: grey;
+font-size: 12px;
+line-height: .4;
+margin-top: 30px;
+margin-left: 15px;
+}
+.flightCode>p:nth-child(1){
+    margin-top:10px;
+}
+.nonStop{
+margin-top: 30px;
+color: grey;
+font-size: 12px;
+width: 100px;
+line-height: .4;
+/* border: 1px solid red; */
+margin-left: 50px;
+}
+.arrivalDetails{
+line-height: .4;
+margin-left: 90px;
+
+}
+
+
+
+.arrivalDetails p:nth-child(3){
+margin-top: 0px;
+padding-top: 0px;
+color: grey;
+line-height: .9;
+font-size: 12px;
+text-overflow:unset;
+}
+
+
+.arrivalDetails p:nth-child(4){
+color: grey;
+font-size: 12px;
+margin-top: 0px;
+padding-top: 0px;
+}
+
+.Bookbtn{
+     background-color:rgb(236,91,36) ;
+    width:150px;
+    height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-right: 30px;
+}
+.Bookbtn:hover{
+    cursor: pointer;
+}
+
+.switch{
+    margin-left: 170px;
+    /* border: 1px solid red; */
+    line-height: 0;
+}
+.adds{
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 260px;
+    margin-left: 30px;
+    margin-top: 15px;
+    /* padding-top: 20px; */
+}
+.leftContents{
+    margin-top: 30px;
+    background-color: white;
+     margin-left: 4%;
+    height: 120px;
+    width: 67%;
+}
+
+.addImage{
+    width:100%;
+    padding-top: 20px;
+}

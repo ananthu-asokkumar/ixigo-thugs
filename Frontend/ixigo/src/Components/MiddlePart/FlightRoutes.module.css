@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.mainContainer {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(235, 231, 231);
+  padding: 5px;
+  /* display: grid;
+  grid-template-columns: 10% 10% 10%; */
+}
+
+.BusRoute_container {
+  width: 92vw;
+  min-height: 132vh;
+  background-color: #fff;
+  margin: 5vh 3vw;
+  box-shadow: 0px 0px 7px rgb(0 0 0 / 15%);
+  font-family: 14px/1.7 "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+  /* display: grid; */
+  /* max-height: 55vh; */
+}
+.BusRoute_container > header {
+  font-size: 33px;
+  font-family: 14px/1.7 "Open Sans", Helvetica, Arial, sans-serif;
+  padding-top: 25px;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 600;
+  color:#ec5b24;
+}
+.BusRoute_container > p {
+  font-family: 14px/1.7 "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 10px 60px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.destination_Container {
+  width: 10%;
+  height: 30%;
+  padding: 10px 70px;
+  /* margin: auto; */
+  margin-top: 25px;
+  
+ 
+}
+.destination_item {
+  width: 23vw;
+  height: 5vh;
+  margin: 1vh 0vw;
+  float: left;
+  padding-top: 5px;
+  font-family: 14px/1.7 "Open Sans", Helvetica, Arial, sans-serif;
+  color: #ec5b24;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-right: 0.5px solid rgb(212, 210, 210);
+}
+.arrow {
+  margin-bottom: -5px;
+}
+/* img {
+  width: 25%;
+  height: 25%;
+} */
+.image_dest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.showmore {
+  border: 1.5px solid grey;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 1050px;
+  height: 30px; 
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color:grey;
+  font-weight: 400;
+}
+.showmore > p {
+   margin: auto;
+}
+@media (min-width: 350px) and (max-width: 1100px) {
+  .mainContainer {
+    padding: 1%;
+    min-height: 100vh;
+  }
+  .BusRoute_container {
+    min-height: 100vh;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 15%);
+  }
+  .BusRoute_container > header {
+    font-size: 20px;
+
+    padding-top: 6px;
+  }
+  .BusRoute_container > p {
+    padding: 1% 10%;
+    font-size: 15px;
+  }
+
+  .destination_Container {
+    padding: auto;
+    margin-top: 10px;
+    
+  }
+  .destination_item {
+    width: 75%;
+    height: 3.5vh;
+    margin: 2px 7%;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px black;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    text-align: center;
+    color: purple;
+    font-size: 15px;
+  }
+}

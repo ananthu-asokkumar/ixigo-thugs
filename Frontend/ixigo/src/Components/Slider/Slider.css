@@ -1,0 +1,36 @@
+.main_slider_container {
+  height: 370px;
+  width: 98vw;
+  margin: auto;
+
+}
+
+.main_slider_container p {
+  margin-top: 100px;
+  text-align: center;
+  color: #000000;
+  font-size: 25px;
+  margin-top: 60px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+ 
+}
+.center img {
+  height: 250px;
+  width: 250px;
+  margin: 20px 30px;
+  display: block;
+  /* margin: auto; */
+  
+}
+.slick-arrow {
+  color: black; 
+}
+.slick-prev {
+  z-index: 100;
+  left: 30px;
+  padding: 30px;
+}
+.slick-next {
+  z-index: 100;
+  right: 30px;
+}
