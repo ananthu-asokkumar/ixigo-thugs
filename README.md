@@ -1,5 +1,5 @@
 # ixigo Clone
-As a part of our build week we were given a problem statement to clone the website ixigo.com in a span ogf 5 days.
+As a part of our build week we were given a problem statement to clone the website ixigo.com in a span of 5 days.
 
 ## Team Size
 4
@@ -85,23 +85,23 @@ ixigo is an Indian AI-based online travel portal, launched in 2007. Headquartere
 # Quick Tour to our Project
 1.This is our login modal
 
-![This is the login page of our app](Frontend.ixigo/public/login.PNG)
+![This is the login page of our app](Frontend/ixigo/public/login.PNG)
 
 2. This is the langing page of our website.
 
-![This is the landing page of our page](Frontend.ixigo/public/landingpage.PNG)
+![This is the landing page of our page](Frontend/ixigo/public/landingpage.PNG)
 
 2. This the flights page where the user can find and filter the flights according to their preference.
 
-![](Frontend.ixigo/public/flightspage.PNG)
+![](Frontend/ixigo/public/flightspage.PNG)
 
 3. On selecting the flight it will take you to the booking page.
 
-![](Frontend.ixigo/public/bookingpage.PNG)
+![](Frontend/ixigo/public/bookingpage.PNG)
 
 4. After adding details of traveller ,the user can go to the checkout details , on click of checkout will take 
 the user to payments page.This is the payment gateway where the user has to provide the card details and make the payment and confir their tickets.
-![]((Frontend.ixigo/public/paymentpage.PNG)
+![]((Frontend/ixigo/public/paymentpage.PNG)
 
 
 5. Once the payment is done and the order is successfully placed and it will redirect from the payment page and after 3 seconds it will redirect the user to the home page of the website.
