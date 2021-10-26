@@ -101,7 +101,7 @@ ixigo is an Indian AI-based online travel portal, launched in 2007. Headquartere
 
 4. After adding details of traveller ,the user can go to the checkout details , on click of checkout will take 
 the user to payments page.This is the payment gateway where the user has to provide the card details and make the payment and confir their tickets.
-![]((Frontend/ixigo/public/paymentpage.PNG)
+![](Frontend/ixigo/public/paymentpage.PNG)
 
 
 5. Once the payment is done and the order is successfully placed and it will redirect from the payment page and after 3 seconds it will redirect the user to the home page of the website.
