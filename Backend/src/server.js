@@ -5,7 +5,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 app.use(express.json());
-app.use(cors())
+app.use(cors());
+require("dotenv").config();
 
 const connect = require("./configs/db");
 
@@ -19,7 +20,7 @@ app.use("./signup", signupController);
 // app.set("views", path.join(__dirname, "views/"));
 
 
-app.listen(5000, async () => {
+app.listen(process.env.PORT||5000, async () => {
   await connect();
   console.log("listening to port 5000");
 });
