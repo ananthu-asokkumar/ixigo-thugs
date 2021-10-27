@@ -96,7 +96,7 @@ const PaymentGateway = () => {
   console.log(_id);
   const getAllFlights = async () => {
     try {
-      let res = await axios.get(`http://localhost:5000/flights/${_id}`);
+      let res = await axios.get(`https://ixigo-ananthu.herokuapp.com/flights/${_id}`);
       console.log(res, "myflight");
       setMyFlight(res.data);
     } catch (err) {

@@ -33,7 +33,7 @@ const BookingDropDown = ({ id }) => {
   console.log(id);
   const getAllFlights = async () => {
     try {
-      let res = await axios.get(`http://localhost:5000/flights/${id}`);
+      let res = await axios.get(`https://ixigo-ananthu.herokuapp.com/flights/${id}`);
       console.log(res, "myflight");
       setMyFlight(res.data);
       // setIsDropDown(null);

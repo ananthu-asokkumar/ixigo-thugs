@@ -21,7 +21,7 @@ function PaymentMain() {
 
   const fetchItem = async () => {
     try {
-      let res = await fetch(`http://localhost:5000/flights/${_id}`);
+      let res = await fetch(`https://ixigo-ananthu.herokuapp.com/flights/${_id}`);
       const dataflight = await res.json();
       setItems(dataflight);
       console.log(dataflight);
