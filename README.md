@@ -1,4 +1,4 @@
-# ixigo Clone
+# Ixigo Clone
 As a part of our build week we were given a problem statement to clone the website ixigo.com in a span of 5 days.Ixigo is one of the leading travel websites in India which offers different services like ticket booking,hotels etc.  
 
 ## Team Size
