@@ -1,5 +1,5 @@
 # ixigo Clone
-As a part of our build week we were given a problem statement to clone the website ixigo.com in a span of 5 days.
+As a part of our build week we were given a problem statement to clone the website ixigo.com in a span of 5 days.Ixigo is one of the leading travel websites in India which offers different services like ticket booking,hotels etc.  
 
 ## Team Size
 4
@@ -11,12 +11,13 @@ As a part of our build week we were given a problem statement to clone the websi
 4. Kishan Kumar
 
 ## About Project
-ixigo is an Indian AI-based online travel portal, launched in 2007. Headquartered in Gurgaon, ixigo aggregates and compares real-time travel information, prices and availability for flights, trains, buses, and hotels, and allows ticket booking through its associate websites and apps.We have tried to clone the website to with all fuctionalities.
+ixigo is an Indian AI-based online travel portal, launched in 2007. Headquartered in Gurgaon, ixigo aggregates and compares real-time travel information, prices and availability for flights, trains, buses, and hotels, and allows ticket booking through its associate websites and apps.We have made this clone as a part of built week in masai school for eductional purpose.Our landing page is the flights booking page and we have done almost all functionalities till successfull booking of a flight.
+
 
 ## Build With
 * React JS
 * Redux
-* MAterial UI
+* Material UI
 * Bootstrap
 * NodeJS
 * Express
@@ -72,11 +73,11 @@ ixigo is an Indian AI-based online travel portal, launched in 2007. Headquartere
 
 ![This is the landing page of our page](Frontend/ixigo/public/landingpage.PNG)
 
-2. This the flights page where the user can find and filter the flights according to their preference.
+2. This the flights page where the user can find and filter the flights according to their preference.The use can choose the flights according to one stop ,two -stop ,and non stop. Apart from that the user can filter the airlies and select their preffered flights using the filters.
 
 ![](Frontend/ixigo/public/flightspage.PNG)
 
-3. On selecting the flight it will take you to the booking page.
+3. On selecting the flight it will take you to the booking page.In the booking page the discount ,offers and final amount after tax and will be shown .If the user wants to modify the booking he can go back and make changes and on confirmation of booking it will take the user to the checkout page. 
 
 ![](Frontend/ixigo/public/bookingpage.PNG)
 
